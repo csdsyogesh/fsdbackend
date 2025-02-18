@@ -2,7 +2,7 @@ const http=require('http');
 const server=http.createServer((req,res)=>{
     res.statusCode=200;
     res.setHeader('content-Type','text/html');
-    res.end('<h1 style="background-color:black; color:white;">Helo baba</h1>');
+    res.end('<h1 style="background-color:red; color:white;">Helo baba</h1>');
 
 });
 server.listen(900,(err)=>{

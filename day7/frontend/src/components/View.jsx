@@ -5,9 +5,9 @@ const View = () => {
     const [users,setUsers]=useState([]);
     useEffect(() => {
         handleview();
-    },[])
+    },[users])
     const handleview= async () => {
-        const res=await axios.get('http://localhost:9000/users/');
+        const res=await axios.get('https://sdbackend-fgmm.onrender.com/users/');
         setUsers(res.data);
         console.log(users);
     }
